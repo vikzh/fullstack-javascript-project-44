@@ -16,8 +16,10 @@ const makeGame = (getQuestionAndAnswer, name) => {
 
     console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.`);
     console.log(`Let's try again, ${name}!`);
-    break;
+    return;
   }
+
+  console.log(`Congratulations, ${name}`);
 };
 
 export default makeGame;
