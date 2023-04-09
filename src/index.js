@@ -19,7 +19,7 @@ const makeGame = (getQuestionAndAnswer, name) => {
     return;
   }
 
-  console.log(`Congratulations, ${name}\n`);
+  console.log(`Congratulations, ${name}\n!`);
 };
 
 export default makeGame;
