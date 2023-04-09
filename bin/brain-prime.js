@@ -5,7 +5,7 @@ import generateQuestionAndAnswer from '../src/prime.js';
 
 console.log('Welcome to the Brain Games!');
 
-const name = askCliInput('What is your name? ');
+const name = askCliInput('May I have your name? ');
 console.log(`Hello, ${name}!`);
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 

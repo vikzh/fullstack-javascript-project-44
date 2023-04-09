@@ -5,7 +5,7 @@ import generateQuestionAndAnswer from '../src/progression.js';
 
 console.log('Welcome to the Brain Games!');
 
-const name = askCliInput('What is your name? ');
+const name = askCliInput('May I have your name? ');
 console.log(`Hello, ${name}!`);
 console.log('What number is missing in the progression?');
 
