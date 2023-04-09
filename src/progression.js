@@ -22,7 +22,7 @@ const generateQuestionAndAnswer = () => {
   const answer = progression[numberOfelementToHide];
   progression[numberOfelementToHide] = '..';
 
-  return [progression.toString(), answer.toString()];
+  return [progression.join(' '), answer.toString()];
 };
 
 export default generateQuestionAndAnswer;
