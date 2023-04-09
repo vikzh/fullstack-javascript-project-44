@@ -6,11 +6,11 @@ const makeGame = (getQuestionAndAnswer, name) => {
   for (let i = 0; i < roundsToWin; i += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();
 
-    console.log(`Question: ${question}`);
+    console.log(`Question: ${question}\n`);
     const userAnswer = askCliInput('Your answer: ');
 
     if (correctAnswer === userAnswer) {
-      console.log('Correct!');
+      console.log('Correct!\n');
       continue;
     }
 
