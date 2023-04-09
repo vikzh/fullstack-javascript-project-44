@@ -7,6 +7,6 @@ console.log('Welcome to the Brain Games!\n');
 
 const name = askCliInput('May I have your name? ');
 console.log(`Hello, ${name}!\n`);
-console.log('Answer "yes" if the number is even, otherwise answer "no".\n');
+console.log('What is the result of the expression?\n');
 
 startGame(generateQuestionAndAnswer, name);
