@@ -1,13 +1,19 @@
 /* eslint-disable no-continue */
-import askCliInput from './cli.js';
+import readlineSync from 'readline-sync';
 
-const makeGame = (getQuestionAndAnswer, name) => {
-  const roundsToWin = 3;
-  for (let i = 0; i < roundsToWin; i += 1) {
+const roundsCount = 3;
+
+const runEngine = (getQuestionAndAnswer, rules) => {
+  console.log('Welcome to the Brain Games!\n');
+  const name = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${name}!\n`);
+  console.log(`${rules}\n`);
+
+  for (let i = 0; i < roundsCount; i += 1) {
     const [question, correctAnswer] = getQuestionAndAnswer();
 
     console.log(`Question: ${question}\n`);
-    const userAnswer = askCliInput('Your answer: ');
+    const userAnswer = readlineSync.question('Your answer: ');
 
     if (correctAnswer === userAnswer) {
       console.log('Correct!\n');
@@ -22,4 +28,4 @@ const makeGame = (getQuestionAndAnswer, name) => {
   console.log(`Congratulations, ${name}!\n`);
 };
 
-export default makeGame;
+export default runEngine;

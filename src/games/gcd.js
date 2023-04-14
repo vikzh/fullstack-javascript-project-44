@@ -1,4 +1,6 @@
 /* eslint-disable no-param-reassign */
+import { getRandomInRange } from '../utils.js';
+
 const gcd = (a, b) => {
   while (a !== b) {
     if (a > b) {
@@ -11,10 +13,8 @@ const gcd = (a, b) => {
   return a;
 };
 
-const generateRandomNumber = (max, min) => Math.round(Math.random() * (max - min) + min);
-
-const generateQuestionAndAnswer = () => {
-  const [number1, number2] = [generateRandomNumber(0, 100), generateRandomNumber(0, 100)];
+const generateRound = () => {
+  const [number1, number2] = [getRandomInRange(0, 100), getRandomInRange(0, 100)];
 
   const question = `${number1} ${number2}`;
   const answer = gcd(number1, number2);
@@ -22,4 +22,4 @@ const generateQuestionAndAnswer = () => {
   return [question, answer.toString()];
 };
 
-export default generateQuestionAndAnswer;
+export default generateRound;

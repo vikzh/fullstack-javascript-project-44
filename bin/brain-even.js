@@ -1,12 +1,7 @@
 #! /usr/bin/env node
-import askCliInput from '../src/cli.js';
-import startGame from '../src/index.js';
-import generateQuestionAndAnswer from '../src/even.js';
+import runEngine from '../src/index.js';
+import generateRound from '../src/games/even.js';
 
-console.log('Welcome to the Brain Games!\n');
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const name = askCliInput('May I have your name? ');
-console.log(`Hello, ${name}!\n`);
-console.log('Answer "yes" if the number is even, otherwise answer "no".\n');
-
-startGame(generateQuestionAndAnswer, name);
+runEngine(generateRound, rules);
