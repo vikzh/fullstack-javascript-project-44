@@ -9,7 +9,7 @@ const calculateAnswer = (operation, number1, number2) => {
     case '*':
       return number1 * number2;
     default:
-      return null;
+      throw new Error(`Operator ${operation} - is incorrect`);
   }
 };
 
@@ -20,9 +20,9 @@ const generateRound = () => {
   const randomMathOperation = mathOperation.at(getRandomInRange(0, 2));
 
   const question = `${number1} ${randomMathOperation} ${number2}`;
-  const answer = calculateAnswer(randomMathOperation, number1, number2);
+  const answer = calculateAnswer(randomMathOperation, number1, number2).toString();
 
-  return [question, answer.toString()];
+  return [question, answer];
 };
 
 export default generateRound;

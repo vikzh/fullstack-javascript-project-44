@@ -19,10 +19,10 @@ const generateRound = () => {
   const progression = makeProgression(progressionStart, progressionStep, progressionLength);
 
   const numberOfelementToHide = getRandomInRange(0, progression.length - 1);
-  const answer = progression[numberOfelementToHide];
+  const answer = progression[numberOfelementToHide].toString();
   progression[numberOfelementToHide] = '..';
 
-  return [progression.join(' '), answer.toString()];
+  return [progression.join(' '), answer];
 };
 
 export default generateRound;

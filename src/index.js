@@ -1,12 +1,11 @@
 /* eslint-disable no-continue */
 import readlineSync from 'readline-sync';
+import makeHello from './cli.js';
 
 const roundsCount = 3;
 
 const runEngine = (getQuestionAndAnswer, rules) => {
-  console.log('Welcome to the Brain Games!\n');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!\n`);
+  const name = makeHello();
   console.log(`${rules}\n`);
 
   for (let i = 0; i < roundsCount; i += 1) {
