@@ -1,4 +1,7 @@
+import runEngine from '../index.js';
 import { getRandomInRange } from '../utils.js';
+
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => (number % 2) === 0;
 
@@ -9,4 +12,4 @@ const generateRound = () => {
   return [question, answer];
 };
 
-export default generateRound;
+export default () => runEngine(generateRound, rules);

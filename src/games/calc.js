@@ -1,4 +1,7 @@
+import runEngine from '../index.js';
 import { getRandomInRange } from '../utils.js';
+
+const rules = 'Find the greatest common divisor of given numbers.\n';
 
 const calculateAnswer = (operation, number1, number2) => {
   switch (operation) {
@@ -25,4 +28,4 @@ const generateRound = () => {
   return [question, answer];
 };
 
-export default generateRound;
+export default () => runEngine(generateRound, rules);

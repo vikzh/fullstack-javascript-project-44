@@ -40,10 +40,15 @@ brain-gcd
 
 ## brain-prime
 ```sh
-[![asciicast](https://asciinema.org/a/uZWDbdyuR5FmqJXAXGkURqSjx.svg)](https://asciinema.org/a/uZWDbdyuR5FmqJXAXGkURqSjx)
+brain-prime
 ```
+
+[![asciicast](https://asciinema.org/a/uZWDbdyuR5FmqJXAXGkURqSjx.svg)](https://asciinema.org/a/uZWDbdyuR5FmqJXAXGkURqSjx)
+
 
 ## brain-progression
 ```sh
-[![asciicast](https://asciinema.org/a/Ku5kJ74yPzkLBnXWo33PBRNlP.svg)](https://asciinema.org/a/Ku5kJ74yPzkLBnXWo33PBRNlP)
+brain-progression
 ```
+
+[![asciicast](https://asciinema.org/a/Ku5kJ74yPzkLBnXWo33PBRNlP.svg)](https://asciinema.org/a/Ku5kJ74yPzkLBnXWo33PBRNlP)

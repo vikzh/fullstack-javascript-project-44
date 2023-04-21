@@ -1,4 +1,7 @@
+import runEngine from '../index.js';
 import { getRandomInRange } from '../utils.js';
+
+const rules = 'What number is missing in the progression?';
 
 const makeProgression = (start, step, n) => {
   const progression = [];
@@ -22,7 +25,9 @@ const generateRound = () => {
   const answer = progression[numberOfelementToHide].toString();
   progression[numberOfelementToHide] = '..';
 
-  return [progression.join(' '), answer];
+  const question = progression.join(' ');
+
+  return [question, answer];
 };
 
-export default generateRound;
+export default () => runEngine(generateRound, rules);
